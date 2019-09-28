@@ -316,9 +316,22 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           2rem !default;
 $grid-row-columns:            6 !default;
 
+$gutters: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$gutters: map-merge(
+  (
+    0: 0,
+    1: $grid-gutter-width * .25,
+    2: $grid-gutter-width * .5,
+    3: $grid-gutter-width,
+    4: $grid-gutter-width * 1.5,
+    5: $grid-gutter-width * 3,
+  ),
+  $gutters
+);
 
 // Container padding
 
@@ -678,10 +691,6 @@ $form-switch-checked-bg-position: right center !default;
 $form-text-margin-top:                  .25rem !default;
 
 $form-check-inline-margin-right:        1rem !default;
-
-$form-check-input-margin-x:             .25rem !default;
-
-$form-grid-gutter-width:                10px !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
