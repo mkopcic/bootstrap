@@ -239,15 +239,15 @@ Remove the default `list-style` and left margin on list items (immediate childre
 </ul>
 {{< /example >}}
 
-### Inline
+### Inline lists
 
-Remove a list's bullets and apply some light `margin` with a combination of two classes, `.list-inline` and `.list-inline-item`.
+Use the grid with (optionally with [gutter classes]({{< docsref "/layout/grid#gutters" >}}) to change spacing between the list items) to create an inline list. The list bullets are removed by default from `.row`.
 
 {{< example >}}
-<ul class="list-inline">
-  <li class="list-inline-item">Lorem ipsum</li>
-  <li class="list-inline-item">Phasellus iaculis</li>
-  <li class="list-inline-item">Nulla volutpat</li>
+<ul class="row gx-2">
+  <li class="col-auto">Lorem ipsum</li>
+  <li class="col-auto">Phasellus iaculis</li>
+  <li class="col-auto">Nulla volutpat</li>
 </ul>
 {{< /example >}}
 

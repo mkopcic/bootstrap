@@ -44,6 +44,7 @@
 @if $enable-grid-classes {
   .row {
     @include make-row();
+    @include list-unstyled(); // Remove padding and list styles for `ul`s
 
     > * {
       @include make-col-ready();

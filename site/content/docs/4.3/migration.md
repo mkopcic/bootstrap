@@ -59,6 +59,7 @@ Changes to any layout tools and our grid system.
 - Responsive gutter classes can be used to control the gutter width in as well horizontal, vertical or both directions.
 - The gutter width is now set in `rem` and slightly increased from `30px` to `2rem` (32px).
 - Better nesting support. A `.row` class can now be used as a direct child of another `.row`.
+- The bullet points and padding from `<ul class="row">`s are removed by default, so no need to add `.list-unstyled` anymore.
 
 ## Content, Reboot, etc
 
@@ -66,6 +67,7 @@ Changes to Reboot, typography, tables, and more.
 
 - [RFS]({{< docsref "/getting-started/rfs" >}}) enabled for automated font size rescaling. [See #29152](https://github.com/twbs/bootstrap/pull/29152)
 - Reset default horizontal `padding-left` on `<ul>` and `<ol>` elements from browser default `40px` to `2rem`.
+- `.list-inline` is removed in favor of using the grid (`.row`) in combination with `.col-auto` list items. See [inline lists documentation]({{< docsref "/content/typography#inline-lists" >}}).
 - Simplified table styles (no more 2px border on `thead > th` elements) and tightened cell padding.
 - Dropped `.pre-scrollable` class. [See #29135](https://github.com/twbs/bootstrap/pull/29135)
 - `.text-*` utilities do not add hover and focus states to links anymore. `.link-*` helper classes can be used instead. [See #29267](https://github.com/twbs/bootstrap/pull/29267)
